@@ -1,0 +1,151 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #1e1e2f;
+  padding: 1em;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+#hero {
+  background-image: url('hero.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-text {
+  background-color: rgba(0,0,0,0.5);
+  padding: 2em;
+  border-radius: 10px;
+}
+
+
+#about {
+  padding: 4em 2em;
+  background: linear-gradient(to right, #e0f7fa, #fff);
+}
+
+.about-container {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-img img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+
+#services {
+  padding: 4em 2em;
+  background: radial-gradient(circle, #fceabb, #f8b500);
+  text-align: center;
+}
+
+.service-boxes {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.box {
+  background-color: #fff;
+  padding: 2em;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex: 1;
+}
+
+#contact {
+  padding: 4em 2em;
+  background-color: #e3f2fd;
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+input,
+textarea {
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #1976d2;
+}
+
+button {
+  padding: 1em;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+footer {
+  background-color: #1e1e2f;
+  color: #fff;
+  text-align: center;
+  padding: 2em;
+}
+
+
+@media (max-width: 768px) {
+  .about-container,
+  .service-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-img img {
+    width: 100%;
+    max-width: 300px;
+  }
+}

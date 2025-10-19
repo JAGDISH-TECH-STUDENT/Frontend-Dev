@@ -1,0 +1,93 @@
+/* Question 2: Multi-Section Informational Webpage */
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+
+header {
+  background-color: #222;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  padding: 0px 40px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+main {
+  margin-top: 80px;
+}
+
+
+.section {
+  padding: 10vh 5%;
+  text-align: center;
+  border: 2px solid #fff;
+  margin-bottom: 2em;
+}
+
+
+.overview {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+.culture {
+  background: radial-gradient(circle, #ff9a9e, #fad0c4);
+}
+
+
+.nature {
+  background-image: url('nature.jpg'); 
+  background-size: cover;
+  background-attachment: fixed; 
+  background-position: center;
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+
+footer {
+  background-color: #222;
+  text-align: center;
+  padding: 2em;
+}
+
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .section {
+    padding: 5vh 2em;
+  }
+}

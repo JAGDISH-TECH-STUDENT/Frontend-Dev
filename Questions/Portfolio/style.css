@@ -1,0 +1,80 @@
+/* Question 1: Personal Portfolio Homepage */
+
+/* ======= Header Styles ======= */
+/* यह हेडर को फिक्स करता है ताकि यह स्क्रॉल करते समय ऊपर रहे */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1e1e2f;
+  color: #ffffff;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  padding :0px 30px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* ======= Main Section ======= */
+main {
+  margin-top: 80px; /* header height */
+  padding: 5vh 10%;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.bio img {
+  width: 150px; /* px unit */
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.bio p {
+  font-size: 1.2em; /* em unit */
+  line-height: 1.6;
+  max-width: 60%;
+}
+
+/* ======= Footer Styles ======= */
+/* यह फुटर को नीचे रखता है चाहे कंटेंट छोटा हो */
+footer {
+  background-color: #1e1e2f;
+  color: #ffffff;
+  padding: 2rem; /* rem unit */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; /* vh unit */
+}
+
+/* ======= Responsive Design ======= */
+@media (max-width: 600px) {
+  .bio {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bio p {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,51 @@
+/* Question 3: Team Members Layout */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 2em;
+  background-color: #f0f4f8;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 2em;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 2em;
+  width: 300px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+.lead {
+  background-color: #e0f7fa;
+  border: 2px solid #00796b;
+}
+
+
+@media (max-width: 600px) {
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

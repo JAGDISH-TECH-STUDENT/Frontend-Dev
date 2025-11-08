@@ -1,0 +1,18 @@
+body {
+    font-family: sans-serif; 
+}
+.row { 
+    display: flex; gap: 20px; 
+}
+a:hover { 
+    color: red; 
+}
+button:focus { 
+    outline: 2px solid blue; 
+}
+button:active { 
+    background-color: gray; 
+}
+li:nth-child(2) { 
+    color: green; 
+}

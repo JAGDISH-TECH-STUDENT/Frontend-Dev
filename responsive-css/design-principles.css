@@ -1,0 +1,20 @@
+.principles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+.box {
+  background: #f0f0f0;
+  padding: 1rem;
+  transition: background 0.3s, color 0.3s;
+}
+.box:hover {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+}
+@media (max-width: 600px) {
+  .principles {
+    grid-template-columns: 1fr;
+  }
+}

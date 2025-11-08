@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.features {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+.box {
+  flex: 1;
+  transition: transform 0.3s ease;
+  background: #eee;
+  padding: 1rem;
+}
+.box:hover {
+  transform: scale(1.05);
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+@media (max-width: 750px) {
+  .features {
+    flex-direction: column;
+  }
+}

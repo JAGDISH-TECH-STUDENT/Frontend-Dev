@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex; gap: 20px; justify-content: center; align-items: center; flex-direction: column;
+}
+.default, .border-box {
+  width: 200px; padding: 20px; background: lightblue;
+}
+.border-box {
+  box-sizing: border-box; background: lightgreen;
+}
+@media (max-width: 600px) {
+  .wrapper { flex-direction: column; }
+}

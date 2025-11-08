@@ -1,0 +1,21 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+.card {
+  flex: 1 1 calc(25% - 1rem);
+  padding: 1rem;
+  background: #eee;
+  transition: background 0.3s;
+}
+.card:hover {
+  background: #ccc;
+}
+@media (max-width: 900px) {
+  .card { flex: 1 1 calc(50% - 1rem); }
+}
+@media (max-width: 600px) {
+  .card { flex: 1 1 100%; }
+}

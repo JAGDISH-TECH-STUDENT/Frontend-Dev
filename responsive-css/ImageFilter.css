@@ -1,0 +1,37 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+.gallery img {
+  width: 100%;
+  transition: filter 0.5s ease;
+}
+.blur img { 
+    filter: blur(4px); 
+}
+.grayscale img { 
+    filter: grayscale(100%); 
+}
+.sepia img { 
+    filter: sepia(100%); 
+}
+.brightness img { 
+    filter: brightness(1.5); 
+}
+.contrast img { 
+    filter: contrast(200%); 
+}
+.hue img { 
+    filter: hue-rotate(90deg); 
+}
+.gallery figure:hover img {
+  filter: none;
+}
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+

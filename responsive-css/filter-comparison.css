@@ -1,0 +1,20 @@
+.comparison {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+.comparison img {
+  width: 100%;
+}
+.filtered img {
+  filter: brightness(0.5);
+  transition: filter 0.5s;
+}
+.filtered:hover img {
+  filter: none;
+}
+@media (max-width: 700px) {
+  .comparison {
+    flex-direction: column;
+  }
+}

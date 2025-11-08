@@ -1,0 +1,16 @@
+.gallery { 
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; 
+}
+figure { 
+    position: relative; overflow: hidden; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2);
+ }
+img { 
+    width: 100%; transition: transform 0.3s; 
+}
+figure:hover img { 
+    transform: scale(1.1); filter: brightness(70%); 
+}
+@media (max-width: 700px) { 
+    .gallery { grid-template-columns: 1fr; 
+    } 
+}

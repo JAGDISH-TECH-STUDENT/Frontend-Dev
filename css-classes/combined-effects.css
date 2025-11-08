@@ -1,0 +1,13 @@
+.row { 
+    display: flex; gap: 20px; justify-content: center; align-items: center; height: 100vh; 
+}
+.effect {
+  padding: 10px 20px; border-radius: 5px; background: #007BFF; color: white;
+  transition: all 0.3s ease-in-out; box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.effect:hover {
+  transform: scale(1.1); background: #0056b3;
+}
+.effect:active {
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}

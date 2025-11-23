@@ -1,0 +1,9 @@
+$(function(){
+  $("#hide").click(()=>$(".banner:first").hide());
+  $("#show").click(()=>$(".banner").show());
+  $("#slide").click(()=>$(".banner").slideToggle());
+  $("#fade").click(()=>$(".banner").fadeToggle());
+  setInterval(function(){
+    $(".banner").fadeOut(1000).fadeIn(1000);
+  },5000);
+});

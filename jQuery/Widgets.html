@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi jQuery Widgets</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script>
+    var jq1 = jQuery.noConflict(true);
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    var jq2 = jQuery.noConflict(true);
+  </script>
+  <script src="q9.js"></script>
+</head>
+<body>
+  <div id="carousel">Slide 1</div>
+  <div id="modal" style="display:none;">Notification Popup</div>
+  <div id="widget">Widget</div>
+  <div id="tooltip">Hover me</div>
+</body>
+</html>

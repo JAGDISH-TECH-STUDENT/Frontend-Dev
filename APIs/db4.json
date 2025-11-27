@@ -1,0 +1,23 @@
+{
+  "users": [
+    { "id": 1, "name": "Ravi" },
+    { "id": 2, "name": "Meena" },
+    { "id": 3, "name": "Karan" },
+    { "id": 4, "name": "Alok" },
+    { "id": 5, "name": "Divya" }
+  ],
+  "orders": [
+    { "id": 1, "product": "Laptop" },
+    { "id": 2, "product": "Smartphone" },
+    { "id": 3, "product": "Keyboard" },
+    { "id": 4, "product": "Monitor" },
+    { "id": 5, "product": "Headphones" }
+  ],
+  "products": [
+    { "id": 1, "name": "Laptop" },
+    { "id": 2, "name": "Smartphone" },
+    { "id": 3, "name": "Keyboard" },
+    { "id": 4, "name": "Monitor" },
+    { "id": 5, "name": "Headphones" }
+  ]
+}

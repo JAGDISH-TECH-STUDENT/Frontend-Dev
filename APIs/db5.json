@@ -1,0 +1,9 @@
+{
+  "timetable": [
+    { "id": 1, "day": "Monday", "subject": "Math", "faculty": "Dr. Sharma", "time": "10:00 AM" },
+    { "id": 2, "day": "Monday", "subject": "Physics", "faculty": "Prof. Mehta", "time": "12:00 PM" },
+    { "id": 3, "day": "Tuesday", "subject": "Chemistry", "faculty": "Dr. Rani", "time": "11:00 AM" },
+    { "id": 4, "day": "Wednesday", "subject": "Computer Science", "faculty": "Mr. Verma", "time": "2:00 PM" },
+    { "id": 5, "day": "Thursday", "subject": "English", "faculty": "Ms. Gupta", "time": "9:00 AM" }
+  ]
+}
